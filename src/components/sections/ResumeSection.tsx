@@ -20,7 +20,7 @@ const experience = [
     company: 'Eaton Corporation',
     period: 'March 2021 – February 2024',
     bullets: [
-      'Grew a global engineering team from ~12 to 45+ engineers across US and India, spanning frontend/backend, mobile, QA, DevOps, UI/UX, and cybersecurity.',
+      'Grew a global engineering team from zero to 45+ engineers across US and India, spanning frontend/backend, mobile, QA, DevOps, UI/UX, and cybersecurity.',
       'Scaled Brightlayer Home consumer IoT app to 100K+ devices and 60K users, improving App Store rating to 4.7 stars while reducing cloud costs ~30%.',
       'Launched AbleEdge Smart Breaker Gen 2; built data ingestion pipelines, B2B APIs, and developer tools supporting mass market and partner ecosystem.',
       'Established CICD, TDD, DORA metrics, architectural review boards, and agile practices across all teams; improved release cadence from quarterly to 2–3x/month.',

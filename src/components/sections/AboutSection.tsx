@@ -4,8 +4,8 @@ import { profile, competencies } from '../../data/profile'
 import { CompetencyBadge } from '../ui/CompetencyBadge'
 
 const stats = [
+  { icon: <Award size={16} />, label: '20 Years', sub: 'One company, many chapters' },
   { icon: <FileCode2 size={16} />, label: '6 Patents', sub: 'awarded + 1 pending' },
-  { icon: <Award size={16} />, label: 'iF Design Award', sub: '2021 winner' },
   { icon: <GraduationCap size={16} />, label: 'MS + BS', sub: 'Electrical & Computer Eng.' },
   { icon: <MapPin size={16} />, label: 'Senoia, GA', sub: 'Atlanta Metro' },
 ]
@@ -45,21 +45,33 @@ export function AboutSection() {
             ))}
           </div>
 
-          <div className="md:col-span-2 grid grid-cols-2 gap-4 content-start">
-            {stats.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true, margin: '-40px' }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="p-4 rounded-xl bg-[#111827] border border-slate-800 flex flex-col gap-2"
-              >
-                <span className="text-blue-400">{stat.icon}</span>
-                <p className="text-slate-100 font-semibold text-sm">{stat.label}</p>
-                <p className="text-slate-500 text-xs">{stat.sub}</p>
-              </motion.div>
-            ))}
+          <div className="md:col-span-2 flex flex-col gap-4 content-start">
+            <div className="grid grid-cols-2 gap-4">
+              {stats.map((stat, i) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, margin: '-40px' }}
+                  transition={{ duration: 0.4, delay: i * 0.08 }}
+                  className="p-4 rounded-xl bg-[#111827] border border-slate-800 flex flex-col gap-2"
+                >
+                  <span className="text-blue-400">{stat.icon}</span>
+                  <p className="text-slate-100 font-semibold text-sm">{stat.label}</p>
+                  <p className="text-slate-500 text-xs">{stat.sub}</p>
+                </motion.div>
+              ))}
+            </div>
+            <motion.img
+              src="/images/family-collage.jpg"
+              alt="Family moments"
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="w-full rounded-xl select-none pointer-events-none grayscale"
+              draggable={false}
+            />
           </div>
         </div>
 
@@ -80,6 +92,7 @@ export function AboutSection() {
             <CompetencyBadge key={c.title} competency={c} index={i} />
           ))}
         </div>
+
       </div>
     </section>
   )

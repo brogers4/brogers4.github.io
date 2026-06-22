@@ -95,7 +95,7 @@ export const timelineRoles: Role[] = [
     title: 'Sr. Engineering Manager, Software & IoT',
     company: 'Eaton Corporation',
     location: 'Peachtree City, GA · Connected Solutions',
-    summary: 'When Eaton launched Connected Solutions as a standalone business unit with a $1B organic growth target, I was asked to turn what had been a scrappy 12-person team into a full-scale engineering organization. Over three years I grew the team to 45+ engineers across the US and India, established the engineering culture, practices, and infrastructure that would support a consumer product with 100K+ deployed devices — and served as product owner across every team while our product org caught up. The hardest part wasn\'t the scale. It was doing it while shipping constantly: two to three releases per month, a 4.7-star app rating, and nearly 30% cloud cost reduction despite doubling users.',
+    summary: 'When Eaton launched Connected Solutions as a standalone business unit with a $1B organic growth target, I was asked to scale what had started as a small IoT architecture team into a full-scale engineering organization. Over three years I grew the team from zero to 45+ engineers across the US and India, established the engineering culture, practices, and infrastructure that would support a consumer product with 100K+ deployed devices — and served as product owner across every team while our product org caught up. The hardest part wasn\'t the scale. It was doing it while shipping constantly: two to three releases per month, a 4.7-star app rating, and nearly 30% cloud cost reduction despite doubling users.',
     projects: [
       {
         id: 'blh-app-scale',
@@ -350,7 +350,7 @@ export const personalProjects = [
     id: 'spekt',
     title: 'spekt.',
     thumbnailImage: '/images/projects/spekt/spekt-lockup.png',
-    description: 'A local-first artifact generator for product owners — turn context into PRDs, PRFAQs, Epics, User Stories, and Backlogs, all stored as editable markdown files on your machine. spekt. is a browser-based dashboard where projects live in a local directory as plain markdown, with no backend, no cloud sync, and no accounts. Context (meeting notes, transcripts, PDFs, images) feeds a Claude-powered generation pipeline that produces the full suite of product artifacts. A direct application of the agentic AI product tooling I built at Eaton — now as a standalone open-source tool.',
+    description: 'An agentic AI pipeline that turns raw product context — meeting notes, transcripts, PDFs, images — into a full suite of product artifacts: PRDs, PRFAQs, Epics, User Stories, and Backlogs. The Claude-powered generation pipeline handles the heavy lifting; you stay in the loop for review and refinement. spekt. is a browser-based dashboard where everything lives locally as plain markdown files — no backend, no cloud sync, no accounts. A direct application of the agentic AI tooling I built at Eaton, now as a standalone open-source tool.',
     githubUrl: 'https://github.com/brogers4/spekt',
     images: [
       '/images/projects/spekt/spekt-lockup.png',
